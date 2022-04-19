@@ -1,5 +1,6 @@
 import './index.css';
 import React, { Component } from 'react';
+import Calculator from './components/Calculator';
 
 export default class App extends Component {
   constructor(props) {
@@ -8,6 +9,6 @@ export default class App extends Component {
   }
 
   render() {
-    return <div>App</div>;
+    return <Calculator />;
   }
 }
