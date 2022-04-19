@@ -11,46 +11,78 @@
 - Frameworks
 - Technologies used
 
-## Live Demo (if available)
+## Live Demo
 
 [Live Demo Link](https://livedemo.com)
 
+## Prerequisites
+
+To get a local copy up and running follow these simple steps:
+
+- A working browser application (Google chrome, Mozilla Fire fox, Microsoft edge ...)
+- VSCode or any other equivalent code editor
+- Node Package Manager (For installing packages like Lighthous, webhint & stylelint used for checking for debugging bad codes before deployment)
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+#### Cloning the project
 
+```
+git clone  <http://github.com:kaitcham/Math-Magicians.git>
+```
 
-To get a local copy up and running follow these simple example steps.
+#### Debuging with Stylelint
 
-### Prerequisites
+```
+npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+```
 
-### Setup
+#### Validation using Stylelint
 
-### Install
+```
+npx stylelint "**/*.{css,scss}"
+```
 
-### Usage
+#### Debuging with Eslint
 
-### Run tests
+```
+npm install --save-dev eslint@7.x eslint-config-airbnb@18.x eslint-plugin-import@2.x eslint-plugin-jsx-a11y@6.x eslint-plugin-react@7.x eslint-plugin-react-hooks@4.x @babel/eslint-parser@7.x @babel/core@7.x  @babel/plugin-syntax-jsx@7.x  @babel/preset-react@7.x @babel/preset-react@7.x
+```
 
-### Deployment
+#### Validation using Eslint Run
 
+```
+npx eslint .
+```
 
+#### To Compile and See a live Version, Run
 
-## Authors
+```
+npm run build
+```
 
-👤 **Author1**
+```
+npm start
+```
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+## Tests
 
-👤 **Author2**
+```
+npm run test .
+```
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+## License
+
+All source code files are licensed under the permissive zlib license
+(http://opensource.org/licenses/Zlib) unless marked differently in a particular folder/file.
+
+## Author
+
+👤 **Munezero Christian**
+
+- GitHub: [@kaitcham](https://github.com/kaitcham)
+- Twitter: [@kaitcham](https://twitter.com/kaitcham)
+- LinkedIn: [@kaitcham](https://www.linkedin.com/in/kaitcham/)
 
 ## 🤝 Contributing
 
