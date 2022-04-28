@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  background-color: rgb(230, 225, 225);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 2px 16px;
+  font-size: 20px;
+}
+
+nav ul li:not(:last-child) {
+  border-right: 2px solid black;
+}
+
+section {
+  background-color: rgb(247, 236, 236);
+  flex: 1;
+}
+
+.homepage {
+  padding: 25px;
+}
+
+.title {
+  margin: 25px 0;
+  font-size: 32px;
+}
+
+.paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.calculator {
+  padding: 25px;
+  display: flex;
+  gap: 5rem;
+}
+
+.calculator h1 {
+  font-size: 32px;
+}
+
+.calc-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 45vw;
+  height: auto;
+}
+
+.container p {
+  padding: 25px;
+  font-size: 24px;
+  text-align: right;
+  background-color: rgb(115, 115, 115);
+  color: white;
+}
+
+.container-row {
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  height: auto;
+}
+
+.container-row button {
+  cursor: pointer;
+  padding: 25px;
+  font-size: 24px;
+  border: 1px solid rgb(212, 211, 211);
+  border-radius: 0;
+}
+
+.container-row button:last-child {
+  background-color: rgb(245, 159, 60);
+}
+
+.container-row:last-child button:first-child {
+  grid-column: span 2;
+}
+
+.quote {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hello {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-section {
+  width: 45%;
+  font-size: 24px;
+  font-weight: 500;
+}
