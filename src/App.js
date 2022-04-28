@@ -1,14 +1,22 @@
-import './index.css';
-import React, { Component } from 'react';
-import Calculator from './components/Calculator';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import CalculatorPage from './pages/CalculatorPage';
+import Quotes from './pages/Quotes';
+import NoMatch from './pages/NoMatch';
+import './App.css';
 
-export default class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+const App = () => (
+  <>
+    <Navbar />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/calculator" element={<CalculatorPage />} />
+      <Route path="/quote" element={<Quotes />} />
+      <Route path="*" element={<NoMatch />} />
+    </Routes>
+  </>
+);
 
-  render() {
-    return <Calculator />;
-  }
-}
+export default App;
