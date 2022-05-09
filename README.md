@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-[Math Magicians](https://kaitcham-mathmagicians.herokuapp.com/calculator)
+[Math Magicians](https://kaitcham-mathmagicians.herokuapp.com/)
 
 ## Prerequisites
 
